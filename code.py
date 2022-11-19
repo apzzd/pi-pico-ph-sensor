@@ -13,5 +13,5 @@ raw = analogio.AnalogIn(board.GP28)
 while True:
 	raw_voltage = raw.value * 3.3 / 65535
 	
-	screen.update("Raw. : {0:0.4f}V".format(raw_voltage))
+	print("Raw. : {0:0.4f}V".format(raw_voltage))
 	time.sleep(1.0)
